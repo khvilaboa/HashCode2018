@@ -6,7 +6,6 @@ logger = logging.getLogger(__name__)
 FIXED_FILENAMES = ("b_should_be_easy.in",)
 # ("a_example.in", "b_should_be_easy.in", "c_no_hurry.in", "d_metropolis.in", "e_high_bonus.in")
 IN_FILENAMES = sys.argv[1].split(",") if len(sys.argv) > 1 else FIXED_FILENAMES
-print IN_FILENAMES
 
 DIST_RATIO = float(sys.argv[2]) if len(sys.argv) > 2 else 1
 EARLY_RATIO = float(sys.argv[3]) if len(sys.argv) > 3 else 1
